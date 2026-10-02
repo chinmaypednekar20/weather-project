@@ -1,0 +1,76 @@
+# ==============================
+# NOAA Weather Project
+# ==============================
+
+# ------------------------------
+# Raw / processed datasets
+# ------------------------------
+data/raw/
+data/processed/
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ------------------------------
+# Streaming runtime data
+# ------------------------------
+data/streaming/live_stream_buffer.json
+data/streaming/stream_state.json
+
+# ------------------------------
+# Generated outputs
+# ------------------------------
+output/*.json
+
+# ------------------------------
+# HDFS local data
+# ------------------------------
+hdfs/
+
+# ------------------------------
+# Python cache
+# ------------------------------
+__pycache__/
+*/__pycache__/
+*.py[cod]
+
+# ------------------------------
+# Virtual environments
+# ------------------------------
+.venv/
+venv/
+env/
+
+# ------------------------------
+# IDE / editor files
+# ------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ------------------------------
+# OS files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Environment / secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+
+# ------------------------------
+# Spark / Hadoop generated files
+# ------------------------------
+spark-warehouse/
+metastore_db/
